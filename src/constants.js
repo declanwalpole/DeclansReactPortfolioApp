@@ -25,9 +25,9 @@ export const frameworkSkills = ["Django", "React", "MERN"];
 export const workExperiences = [
   {
     date: "11/2010 – Present",
-    title: "Title 1",
-    company: "Company 1",
-    subtitle: "Subtitle 1",
+    title: "VP Corporate Insights",
+    company: "PointsBet USA",
+    subtitle: "Denver CO",
     paragraphs: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "Pellentesque ac justo sit amet nunc tincidunt condimentum.",
@@ -36,9 +36,9 @@ export const workExperiences = [
   },
   {
     date: "04/2009 – 11/2010",
-    title: "Title 2",
-    company: "Company 2",
-    subtitle: "Subtitle 2",
+    title: "Head of Quantitative Analytics",
+    company: "PointsBet AUS",
+    subtitle: "Melbourne, Aus",
     paragraphs: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "Pellentesque ac justo sit amet nunc tincidunt condimentum.",
@@ -47,9 +47,9 @@ export const workExperiences = [
   },
   {
     date: "04/2009 – 11/2010",
-    title: "Title 3",
-    company: "Company 2",
-    subtitle: "Subtitle 2",
+    title: "Head of Quantitative Analytics",
+    company: "William Hill AUS",
+    subtitle: "Sydney Aus",
     paragraphs: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "Pellentesque ac justo sit amet nunc tincidunt condimentum.",
@@ -58,9 +58,9 @@ export const workExperiences = [
   },
   {
     date: "04/2009 – 11/2010",
-    title: "Title 3",
-    company: "Company 2",
-    subtitle: "Subtitle 2",
+    title: "Analyst",
+    company: "Commonwealth Bank",
+    subtitle: "Sydney Aus",
     paragraphs: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "Pellentesque ac justo sit amet nunc tincidunt condimentum.",
@@ -71,7 +71,7 @@ export const workExperiences = [
     date: "04/2009 – 11/2010",
     title: "Bachelor of Commerce (Honours)",
     company: "University of Sydney",
-    subtitle: "Econometrics Major, Thesis in Quant Finance",
+    subtitle: "Sydney Aus",
     paragraphs: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "Pellentesque ac justo sit amet nunc tincidunt condimentum.",

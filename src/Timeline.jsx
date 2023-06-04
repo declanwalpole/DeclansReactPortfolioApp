@@ -3,14 +3,16 @@ import React from "react";
 import { FaDownload, FaFilePdf } from "react-icons/fa";
 
 import { workExperiences } from "./constants";
-import PdfDocument from "./resume.pdf";
+import ResumePdfDocument from "./resume.pdf";
+import JournalPdfDocument from "./journal.pdf";
+import TranscriptPdfDocument from "./transcript.pdf";
 
 const WorkExperience = ({ id }) => {
   return (
     <div className="work-exp" id={id}>
       <h1>Work Experience</h1>
       <a
-        href={PdfDocument}
+        href={ResumePdfDocument}
         download="DeclanWalpoleResume.pdf"
         className="download-button"
       >
@@ -35,6 +37,26 @@ const WorkExperience = ({ id }) => {
           </TimelineItem>
         ))}
       </Timeline>
+      <a
+        href={JournalPdfDocument}
+        download="JournalQuantFinance.pdf"
+        className="download-button"
+      >
+        <FaDownload className="download-icon" />
+        <span>Quantitative Finance Publication</span>
+        <FaFilePdf className="pdf-icon" />
+      </a>
+      <br></br>
+      <br></br>
+      <a
+        href={TranscriptPdfDocument}
+        download="DeclanWalpoleTranscript.pdf"
+        className="download-button"
+      >
+        <FaDownload className="download-icon" />
+        <span>University Transcript</span>
+        <FaFilePdf className="pdf-icon" />
+      </a>
     </div>
   );
 };
