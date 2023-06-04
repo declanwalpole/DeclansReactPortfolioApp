@@ -3,15 +3,31 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   box-sizing: border-box;
+  margin-left:0;
+  margin-right:0
 }
 
 p {
   font-weight: 200;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.hero-section,.about-section, .proj_section, .work-exp {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .navbar {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +39,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
+  max-width:100%
 }
 
 
@@ -44,18 +61,19 @@ p {
   font-weight: bold;
 }
 
+
+
 .nav-links {
+  /* Existing styles */
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-  gap: 50px;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-
 .nav-links li {
-  margin-right: 1rem;
+  margin-right: 3rem;
   cursor:pointer;
 }
 
@@ -92,12 +110,30 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  p {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+  
   .nav-links {
+    /* Other existing styles */
+    display:none
+  }
+
+  .header-container {
     display: none;
   }
 
   .hamburger-icon {
     display: flex;
+    padding-right: 5%;
   }
 
   .menu-container.open {
@@ -210,7 +246,7 @@ margin-top: 1rem;
 flex-direction: column;
 justify-content: center;
 text-align: center;
-min-height: 80vh
+min-height: 80vh;
   }
 
 .about-content, .proj_content {
@@ -225,11 +261,8 @@ display: flex;
 
   .about-col1,
 .about-col2 {
-  flex-basis: 50%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  padding-left: 5%;
-  padding-right: 5%;
+  flex: 1;
+  padding: 0 2%; /* Adjust the padding as desired */
 }
 
 .social-links {
@@ -309,15 +342,13 @@ text-align: center;
 
 .proj-outer {
   display:flex;
+  max-width:100%
 }
 
 .proj-lhs,
 .proj-rhs {
-  flex-basis: 50%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  padding-left: 5%;
-  padding-right: 5%;
+  flex: 1;
+  padding: 0 2%; /* Adjust the padding as desired */
 }
 
 .explore-button {
@@ -331,6 +362,7 @@ text-align: center;
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  cursor:pointer;
   animation: pulsate-background 2s infinite;
 }
 

@@ -10,7 +10,7 @@ import TranscriptPdfDocument from "./transcript.pdf";
 const WorkExperience = ({ id }) => {
   return (
     <div className="work-exp" id={id}>
-      <h1>Work Experience</h1>
+      <h1>Work History and Education</h1>
       <a
         href={ResumePdfDocument}
         download="DeclanWalpoleResume.pdf"

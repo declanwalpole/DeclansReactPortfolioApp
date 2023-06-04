@@ -63,7 +63,7 @@ const ExtraInfoCarousel = ({ slides }) => {
 };
 
 const ProjectCard = ({ project }) => {
-  const [showMore, setShowMore] = useState(true);
+  const [showMore, setShowMore] = useState(false);
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
