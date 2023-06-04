@@ -2,6 +2,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -286,6 +287,7 @@ text-align: center;
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  cursor:pointer;
 }
 
 .download-icon,
@@ -314,6 +316,32 @@ text-align: center;
   padding-right: 5%;
 }
 
+.explore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #facf0f;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  animation: pulsate-background 2s infinite;
+}
+
+/* Example pulsating background animation */
+@keyframes pulsate-background {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #facf0f;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
 
 .extra-outer {
   width:60%

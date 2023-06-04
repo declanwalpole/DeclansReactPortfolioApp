@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { sideProjects } from "./constants";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
 
 const ExtraInfoCard = ({ additionalInfo }) => {
   return (
@@ -48,13 +50,13 @@ const ExtraInfoCarousel = ({ slides }) => {
         className="carousel-button carousel-button--prev"
         onClick={prevSlide}
       >
-        Previous
+        <RiArrowLeftLine /> Previous
       </button>
       <button
         className="carousel-button carousel-button--next"
         onClick={nextSlide}
       >
-        Next
+        Next <RiArrowRightLine />
       </button>
     </div>
   );
@@ -86,8 +88,10 @@ const ProjectCard = ({ project }) => {
           </div>
 
           {project.additionalInfo && (
-            <button onClick={toggleShowMore}>
+            <button className="explore-button" onClick={toggleShowMore}>
               {showMore ? "Hide product features" : "Explore product features"}
+              <br></br>
+              {showMore ? <FaAngleUp /> : <FaAngleDown />}
             </button>
           )}
         </div>
