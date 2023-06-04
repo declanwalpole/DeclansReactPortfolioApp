@@ -89,7 +89,9 @@ const ProjectCard = ({ project }) => {
 
           {project.additionalInfo && (
             <button className="explore-button" onClick={toggleShowMore}>
-              {showMore ? "Hide product features" : "Explore product features"}
+              {showMore
+                ? "Hide product features"
+                : "Explore all product features"}
               <br></br>
               {showMore ? <FaAngleUp /> : <FaAngleDown />}
             </button>

@@ -9,9 +9,7 @@ const Footer = () => {
         Full stack developer making career change after having worked in
         analytics and strategy
       </p>
-      <p className="byline">
-        Australian national living in Denver --> Minneapolis on E3 VISA.
-      </p>
+      <p className="byline">Australian national living in the US on E3 VISA.</p>
       <div className="social-links">
         <a href="mailto:declan.walpole@gmail.com">
           <FaEnvelope className="social-icon" />

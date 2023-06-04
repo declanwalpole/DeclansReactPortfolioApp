@@ -77,7 +77,8 @@ export const workExperiences = [
     subtitle: "Sydney Aus",
     paragraphs: [
       "Econometrics major, Finance minor",
-      "Tutored a first-year 'Business Analytics' course",
+      "Tutored BUSS1020 'Quantitative Business Analytics' course",
+      "Part-time worked as Research Assistant to senior lecturer",
       "Thesis on tail risk measures of volatility (quantitative finance)",
       "Published to Journal of Quantitative Finance (Gerlach, Chen, Walpole 2016)",
       "Scholarship recipient for excellent grades (see transcript)",

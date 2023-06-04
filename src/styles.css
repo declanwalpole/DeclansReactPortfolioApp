@@ -5,6 +5,10 @@ body {
   box-sizing: border-box;
 }
 
+p {
+  font-weight: 200;
+}
+
 .navbar {
   background-color: #ffffff;
   padding: 10px;
@@ -175,7 +179,7 @@ margin-bottom: 100px;
 
   .hero-content h2 {
     /* Hero section styles */
-margin-top: 5rem;
+margin-top: 1rem;
 
   }
 

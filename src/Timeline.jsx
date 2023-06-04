@@ -25,7 +25,13 @@ const WorkExperience = ({ id }) => {
           <TimelineItem
             key={experience.date}
             dateText={experience.date}
-            style={{ color: "#e86971" }}
+            dateInnerStyle={{ background: "#000", color: "#fff" }}
+            bodyContainerStyle={{
+              background: "#ddd",
+              padding: "20px",
+              borderRadius: "8px",
+              boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
+            }}
           >
             <h3>
               {experience.title}, {experience.company}

@@ -9,6 +9,9 @@ const HeroSection = ({ id }) => {
           Full stack developer making career change after having worked in
           analytics and strategy
         </h2>
+        <h2>
+          Sydney, Australia {"\u2192"} Denver CO {"\u2192"} Minneapolis MN
+        </h2>
         <div className="hero-cta">
           <a href="#projects">Projects</a>
         </div>
