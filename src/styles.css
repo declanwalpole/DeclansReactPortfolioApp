@@ -434,6 +434,10 @@ text-align: center;
   color:white
 }
 
+.timeline-description {
+  display: none
+}
+
 
 @media screen and (max-width: 600px) {
   p {
@@ -529,6 +533,8 @@ text-align: center;
   .desktop-byline {
     display: none
   }
+
+
 
   .proj-rhs {
 display:none  }

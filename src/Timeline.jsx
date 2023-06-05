@@ -38,7 +38,9 @@ const WorkExperience = ({ id }) => {
             </h3>
             <h4>{experience.subtitle}</h4>
             {experience.paragraphs.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index} className="timeline-description">
+                {paragraph}
+              </p>
             ))}
           </TimelineItem>
         ))}
