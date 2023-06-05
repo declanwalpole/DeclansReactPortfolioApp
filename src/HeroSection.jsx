@@ -11,7 +11,7 @@ const HeroSection = ({ id }) => {
         </h3>
         <h3 className="mobile-byline">Full stack dev making career change</h3>
         <h3 className="desktop-byline">
-          Sydney, Australia {"\u2192"} Denver CO {"\u2192"} Minneapolis MN
+          Sydney {"\u2192"} Denver {"\u2192"} Minneapolis
         </h3>
         <h3 className="mobile-byline">
           SYD {"\u2192"} DEN {"\u2192"} MPLS
