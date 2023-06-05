@@ -180,15 +180,15 @@ export const sideProjects = [
     ],
     href: "/player-prop-arbitrage-betting-service",
   },
-  {
-    title: "Card Game in R",
-    tags: ["R", "abstraction"],
-    image: require("./images/Screenshot Golf card game.png"),
-    paragraphs: [
-      "During the COVID lockdown of 2020, I coded up one of our favourite card games. The game Golf is a simple multiplayer game where each player is dealt four cards, some face down, and they attempt to minimize their cumulative score across 18 hands.",
-      "The program required abstractions of a deck of cards, hands, and possible actions.",
-      "A function run in the R console provides textual feedback as the player interacts with numerous pop-ups seeking input about their choice of move.",
-    ],
-    href: "/player-prop-arbitrage-betting-service",
-  },
+  // {
+  //   title: "Card Game in R",
+  //   tags: ["R", "abstraction"],
+  //   image: require("./images/Screenshot Golf card game.png"),
+  //   paragraphs: [
+  //     "During the COVID lockdown of 2020, I coded up one of our favourite card games. The game Golf is a simple multiplayer game where each player is dealt four cards, some face down, and they attempt to minimize their cumulative score across 18 hands.",
+  //     "The program required abstractions of a deck of cards, hands, and possible actions.",
+  //     "A function run in the R console provides textual feedback as the player interacts with numerous pop-ups seeking input about their choice of move.",
+  //   ],
+  //   href: "/player-prop-arbitrage-betting-service",
+  // },
 ];
