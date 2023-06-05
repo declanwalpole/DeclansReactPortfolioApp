@@ -20,13 +20,19 @@ const Navbar = () => {
       <div className={`header-container`}>
         <ul className="nav-links">
           <li>
-            <a href="#resume">About</a>
+            <a href="#about" className="nav-link-ltr">
+              About
+            </a>
           </li>
           <li>
-            <a href="#resume">Work History</a>
+            <a href="#resume" className="nav-link-ltr">
+              Work History
+            </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" className="nav-link-ltr">
+              Projects
+            </a>
           </li>
         </ul>
       </div>
@@ -41,13 +47,13 @@ const Navbar = () => {
       <div className={`menu-container ${menuOpen ? "open" : ""}`}>
         <ul className="sm-nav-links">
           <li>
-            <a href="#resume">Resume</a>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#resume">Work History</a>
           </li>
           <li>
             <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
