@@ -11,7 +11,11 @@ const ExtraInfoCard = ({ additionalInfo }) => {
         <p>{additionalInfo.description}</p>
       </div>
       <div className="extra-rhs">
-        <img src={additionalInfo.image} className="extra-img"></img>
+        <img
+          src={additionalInfo.image}
+          className="extra-img"
+          alt="project feature"
+        ></img>
       </div>
     </div>
   );
@@ -98,7 +102,7 @@ const ProjectCard = ({ project }) => {
           )}
         </div>
         <div className="proj-rhs">
-          <img src={project.image} className="project-img"></img>
+          <img src={project.image} className="project-img" alt="project"></img>
         </div>
       </div>
       {showMore && project.additionalInfo && (
