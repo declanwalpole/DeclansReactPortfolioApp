@@ -1,10 +1,21 @@
-/* App.css */
+:root {
+  --light: #ffffff;
+  --dark: #333;
+  --cta: #facf0f;
+  --mid: #f0f0f0;
+}
+
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   box-sizing: border-box;
   margin-left:0;
   margin-right:0
+}
+
+.topdiv {
+  width: 100vw
 }
 
 p {
@@ -33,13 +44,13 @@ h3 {
 }
 
 .navbar {
-  background-color: #ffffff;
+  background-color: var(--light);
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  color: #333;
+  color: var(--dark);
   line-height: 1.5;
   position: fixed;
   top: 0;
@@ -89,7 +100,7 @@ h3 {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: var(--dark);
   font-weight: bold;
 }
 
@@ -110,90 +121,14 @@ h3 {
 .hamburger-icon .line {
   width: 25px;
   height: 3px;
-  background-color: #000; /* Change to black */
+  background-color: var(--dark); /* Change to black */
   margin-bottom: 4px;
   transition: transform 0.3s ease-in-out;
 }
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 0.8rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-  
-  .nav-links {
-    /* Other existing styles */
-    display:none
-  }
-
-  .header-container {
-    display: none;
-  }
-
-  .hamburger-icon {
-    display: flex;
-    padding-right: 5%;
-  }
-
-  .menu-container.open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #f0f0f0;
-    padding: 1rem;
-    color:#333; 
-  }
-
-
-  .sm-nav-links {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    gap: 50px;
-    margin-left: auto;
-  }
-  
-  .sm-nav-links li {
-    cursor: pointer;
-  }
-
-  
-  .sm-nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-
-  .hamburger-icon.open .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 6px);
-  }
-  
-  .hamburger-icon.open .line:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger-icon.open .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -6px);
-  }
-}
-
-
   
   .hero-section {
     /* Hero section styles */
-    background-color: #F0F0F0;
+    background-color: var(--mid);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23F0F0F0'/%3E%3Cstop offset='1' stop-color='%23F0F0F0'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='319' height='265.8' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
@@ -202,8 +137,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center; 
-margin-top:60px;
-width: 100% }
+margin-top:60px}
 
   .hero-content {
     padding: 5% 15%
@@ -232,10 +166,10 @@ margin-bottom: 10%
   .hero-cta a {
     display: inline-block;
     padding: 1% 2%;
-    min-width: 50px;
-    max-width: 45%;
-    background-color:  #facf0f;
-    color: #333;
+    width: 45%;
+    min-width: min-content;
+    background-color:  var(--cta);
+    color: var(--dark);
     text-decoration: none;
     transition: transform 0.2s ease-in-out;
     text-transform: uppercase;
@@ -248,7 +182,7 @@ margin-bottom: 10%
   
   .about-section, .proj-section {
     /* Hero section styles */
-    background-color: #F0F0F0;
+    background-color: var(--mid);
     display: flex;
 flex-direction: column;
 justify-content: center;
@@ -281,7 +215,7 @@ display: flex;
 .social-icon {
   width: 40px;
   height: 40px;
-  color: #333;
+  color: var(--dark);
 }
 
 .about-col2 h2 {
@@ -298,8 +232,8 @@ display: flex;
 
 
 .skills_skill {
-  background-color: #333;
-  color:#ffffff;
+  background-color: var(--dark);
+  color:var(--light);
   display:flex;
   padding:5px;
   margin:5px;
@@ -309,12 +243,12 @@ display: flex;
 
 .skills_skill:hover {
   transform: translateY(-5px);
-  background-color:  #facf0f;
+  background-color:  var(--cta);
 }
 
 .work-exp {
   /* Hero section styles */
-  background-color: #FFF;
+  background-color: var(--light);
 justify-content: center;
 text-align: center;
 }
@@ -324,11 +258,11 @@ text-align: center;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: #facf0f;
+  background-color: var(--cta);
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  color: #333;
+  color: var(--dark);
   font-weight: bold;
   cursor:pointer;
 }
@@ -362,11 +296,11 @@ text-align: center;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: #facf0f;
+  background-color: var(--cta);
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  color: #333;
+  color: var(--dark);
   font-weight: bold;
   cursor:pointer;
   animation: pulsate-background 2s infinite;
@@ -378,7 +312,7 @@ text-align: center;
     background-color: transparent;
   }
   50% {
-    background-color: #facf0f;
+    background-color: var(--cta);
   }
   100% {
     background-color: transparent;
@@ -420,7 +354,7 @@ text-align: center;
   top: 50%;
   transform: translateY(-50%);
   padding: 10px;
-  background-color: #f0f0f0;
+  background-color: var(--mid);
   cursor: pointer;
 }
 
@@ -477,4 +411,106 @@ text-align: center;
 
 .footer .social-icon {
   color:white
+}
+
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  .nav-links {
+    /* Other existing styles */
+    display:none
+  }
+
+  .header-container {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    margin-right: 5%
+  }
+
+  .menu-container.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--mid);
+    padding: 1rem;
+    color:var(--dark); 
+  }
+
+
+  .sm-nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    margin-left: auto;
+  }
+  
+  .sm-nav-links li {
+    cursor: pointer;
+  }
+
+  
+  .sm-nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+  }
+
+  .hamburger-icon.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  
+  .hamburger-icon.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+
+  .about-columns, .proj-columns {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+
+  .about-col1,
+  .about-col2 {
+    flex: 1;
+    padding-left: 0;
+    padding-right: 0;
+    margin:0; /* Adjust the padding as desired */
+  }
+  
+  .proj-rhs {
+display:none  }
+
+  
+.carousel-button--prev {
+  left: 0%;
+}
+
+.carousel-button--next {
+  right: 0%;
+}
+
 }
