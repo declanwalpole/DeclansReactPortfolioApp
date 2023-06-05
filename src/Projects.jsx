@@ -54,13 +54,15 @@ const ExtraInfoCarousel = ({ slides }) => {
         className="carousel-button carousel-button--prev"
         onClick={prevSlide}
       >
-        <RiArrowLeftLine /> Previous
+        <RiArrowLeftLine />
+        <span className="carousel-button-desktop">{" Previous"}</span>
       </button>
       <button
         className="carousel-button carousel-button--next"
         onClick={nextSlide}
       >
-        Next <RiArrowRightLine />
+        <span className="carousel-button-desktop">{"Next "}</span>
+        <RiArrowRightLine />
       </button>
     </div>
   );
@@ -93,11 +95,15 @@ const ProjectCard = ({ project }) => {
 
           {project.additionalInfo && (
             <button className="explore-button" onClick={toggleShowMore}>
-              {showMore
-                ? "Hide product features"
-                : "Explore all product features"}
-              <br></br>
-              {showMore ? <FaAngleUp /> : <FaAngleDown />}
+              <span className="explore-text">
+                {showMore
+                  ? "Hide product features"
+                  : "Explore all product features"}
+                {"   "}
+                <span className="explore-arrow">
+                  {showMore ? <FaAngleUp /> : <FaAngleDown />}
+                </span>
+              </span>
             </button>
           )}
         </div>

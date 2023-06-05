@@ -329,19 +329,27 @@ text-align: center;
   color: var(--dark);
   font-weight: bold;
   cursor:pointer;
-  animation: pulsate-background 2s infinite;
+  opacity: 1
 }
 
+.explore-button:hover {
+  opacity: 0.5
+}
+
+.explore-arrow {
+  position: relative;
+  animation: arrow-move 1s infinite alternate;
+}
+
+
+
 /* Example pulsating background animation */
-@keyframes pulsate-background {
+@keyframes arrow-move {
   0% {
-    background-color: transparent;
-  }
-  50% {
-    background-color: var(--cta);
+    top: 2px;
   }
   100% {
-    background-color: transparent;
+    top: 8px; /* Adjust the desired vertical distance */
   }
 }
 
@@ -380,7 +388,9 @@ text-align: center;
   top: 50%;
   transform: translateY(-50%);
   padding: 10px;
-  background-color: var(--mid);
+  background-color: var(--cta);
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
 }
 
@@ -523,8 +533,8 @@ text-align: center;
   .about-col1,
   .about-col2 {
     flex: 1;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     margin:0; /* Adjust the padding as desired */
   }
   
@@ -553,6 +563,10 @@ display:none  }
 
 .carousel-button--next {
   right: 0%;
+}
+
+.carousel-button-desktop {
+  display:none
 }
 
 .download-button {
