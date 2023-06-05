@@ -1,7 +1,7 @@
 export const aboutParagraphs = [
-  "I am a self-taught full stack engineer making a career transition. Having held roles in quants, analytics and strategy, I felt compelled to challenge myself in a technical field. I have also grown out-of-love with corporate business settings.",
-  "I am an Australian national; born and raised in Sydney. I moved to Melbourne for the PointsBet role and was lucky enough to move to Denver as they expanded to the US. I have now bought a house in Minneapolis MN where I will work remotely.",
-  "I have deep expertise in the sports betting industry, after first getting my start in Financial Services. There are many parallels betting sports betting and financial markets.",
+  "I am a self-taught full stack engineer making a career transition. Having held roles in quants, analytics and strategy, I feel compelled to challenge myself in a technical field outside of a corporate business settings.",
+  "I am an Australian national; born and raised in Sydney. I moved to Melbourne for the PointsBet role in 2018 and then move to Denver in 2019 as they expanded to the US. I have now bought a house in Minneapolis MN where I will work remotely.",
+  "I have deep expertise in the sports betting industry, after first getting my start in Financial Services. I have found many parallels betting sports betting and financial markets.",
   "I am open to job opportunities that will help my web development career shift. Do not hesitate to contact me if you think my skills and interest might be a match.",
 ];
 
