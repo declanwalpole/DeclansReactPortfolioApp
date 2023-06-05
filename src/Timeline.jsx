@@ -3,9 +3,9 @@ import React from "react";
 import { FaDownload, FaFilePdf } from "react-icons/fa";
 
 import { workExperiences } from "./constants";
-import ResumePdfDocument from "./resume.pdf";
-import JournalPdfDocument from "./journal.pdf";
-import TranscriptPdfDocument from "./transcript.pdf";
+import ResumePdfDocument from "./downloads/resume.pdf";
+import JournalPdfDocument from "./downloads/journal.pdf";
+import TranscriptPdfDocument from "./downloads/transcript.pdf";
 
 const WorkExperience = ({ id }) => {
   return (
