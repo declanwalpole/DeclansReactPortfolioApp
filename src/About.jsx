@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 import {
   aboutParagraphs,
@@ -10,6 +9,24 @@ import {
 
 import Socials from "./Socials";
 
+const SkillBubbles = ({ SkillsArray }) => {
+  return (
+    <div className="skills">
+      {SkillsArray.map((skill) => (
+        <div className="skills_skill" key={skill}>
+          {skill}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const Paragraphs = ({ paragraphs }) => {
+  return paragraphs.map((para) => {
+    return <p>{para}</p>;
+  });
+};
+
 const About = ({ id }) => {
   return (
     <div className="about-section" id={id}>
@@ -19,36 +36,16 @@ const About = ({ id }) => {
       <div className="about-columns">
         <div className="about-col1">
           <h2>Career Change</h2>
-          {aboutParagraphs.map((para) => {
-            return <p>{para}</p>;
-          })}
+          <Paragraphs paragraphs={aboutParagraphs} />
           <Socials />
         </div>
         <div className="about-col2">
           <h2>Expertise</h2>
-          <div className="skills">
-            {expertiseSkills.map((skill) => (
-              <div className="skills_skill" key={skill}>
-                {skill}
-              </div>
-            ))}
-          </div>
+          <SkillBubbles SkillsArray={expertiseSkills} />
           <h2>Languages</h2>
-          <div className="skills">
-            {languageSkills.map((skill) => (
-              <div className="skills_skill" key={skill}>
-                {skill}
-              </div>
-            ))}
-          </div>
+          <SkillBubbles SkillsArray={languageSkills} />
           <h2>Frameworks</h2>
-          <div className="skills">
-            {frameworkSkills.map((skill) => (
-              <div className="skills_skill" key={skill}>
-                {skill}
-              </div>
-            ))}
-          </div>
+          <SkillBubbles SkillsArray={frameworkSkills} />
         </div>
       </div>
     </div>
