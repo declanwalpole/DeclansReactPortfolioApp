@@ -8,6 +8,8 @@ import {
   frameworkSkills,
 } from "./constants";
 
+import Socials from "./Socials";
+
 const About = ({ id }) => {
   return (
     <div className="about-section" id={id}>
@@ -20,25 +22,7 @@ const About = ({ id }) => {
           {aboutParagraphs.map((para) => {
             return <p>{para}</p>;
           })}
-          <div className="social-links">
-            <a href="mailto:declan.walpole@gmail.com">
-              <FaEnvelope className="social-icon" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/declan-walpole-0491b161/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="social-icon" />
-            </a>
-            <a
-              href="https://github.com/declanwalpole"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="social-icon" />
-            </a>
-          </div>
+          <Socials />
         </div>
         <div className="about-col2">
           <h2>Expertise</h2>

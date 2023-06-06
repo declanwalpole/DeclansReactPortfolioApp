@@ -32,7 +32,7 @@ export const frameworkSkills = ["Django", "React", "MERN"];
 
 export const workExperiences = [
   {
-    date: "10/2019 – Present",
+    date: "Oct 2019 – Present",
     title: "VP Corporate Insights",
     company: "PointsBet USA",
     subtitle: "Denver CO",
@@ -45,7 +45,7 @@ export const workExperiences = [
     ],
   },
   {
-    date: "06/2018 – 09/2019",
+    date: "Jun 2018 – Sep 2019",
     title: "Head of Quantitative Analytics",
     company: "PointsBet AUS",
     subtitle: "Melbourne, Aus",
@@ -58,7 +58,7 @@ export const workExperiences = [
     ],
   },
   {
-    date: "03/2016 – 04/2018",
+    date: "Mar 2016 – Apr 2018",
     title: "Head of Quantitative Analytics",
     company: "William Hill AUS",
     subtitle: "Sydney Aus",
@@ -68,7 +68,7 @@ export const workExperiences = [
     ],
   },
   {
-    date: "04/2014 – 02/2016",
+    date: "Apr 2014 – Feb 2016",
     title: "Analyst",
     company: "Commonwealth Bank",
     subtitle: "Sydney Aus",
@@ -79,7 +79,7 @@ export const workExperiences = [
     ],
   },
   {
-    date: "02/2010 – 11/2013",
+    date: "Feb 2010 – Nov 2013",
     title: "Bachelor of Commerce (Honours)",
     company: "University of Sydney",
     subtitle: "Sydney Aus",
@@ -107,12 +107,11 @@ export const sideProjects = [
     ],
     image: require("./images/Screenshot CPP home.png"),
     paragraphs: [
-      "ComparePlayerProps (CPP) was an odds comparison website which focused on just player props (e.g. NFL QB passing yards, NBA player points etc.). I created it as a solo side project during 2021-2022 after having done some tutorials on MERN full-stack applications. For about three months, it was deployed to 'ComparePlayerProps.com' with AWS EC2.",
+      "ComparePlayerProps was an odds comparison website which focused on just player stat markets. I created it as a solo side project during 2021-2022 after having done some tutorials on MERN full-stack applications. For about three months, it was deployed to 'ComparePlayerProps.com' with AWS EC2.",
       "A CRON job would scrape data every fifteen minutes from the likes of DraftKings and FanDuel, via their (undocumented) APIs. I persisted that data to MongoDB and conducted automated analysis to identify arbitrage opportunities.",
       "The frontend was built on React and styled with Bootstrap. Users could select a match and compare all odds for every player/stat, with special styling to highlight the best available odds.",
       "In real-time as arbs were identified, a Node.js program would push to the Twitter API to alert followers of the betting opportunities.",
     ],
-    href: "/player-prop-arbitrage-betting-service",
     additionalInfo: [
       {
         subtitle: "Identify mispricing between different sites",
@@ -176,10 +175,8 @@ export const sideProjects = [
     image: require("./images/screenshot django datamodel.png"),
     paragraphs: [
       "During 2023, I have been the lone developer working on a Proof of Concept for a startup.",
-      "The web app is made using Django (python). I have been responsible for all aspects of the application; spanning the data model, working with Django ORM, internal APIs, testing and mocking up a frontend.",
-      "This was my first time using the Django framework, and I look forward to more opportunities to hone the skills. I like the framework as a self-taught developer seeing as it is 'batteries included'.",
+      "The web app is made using Django (python). I have been responsible for all aspects of the application; from the data model, to working with Django ORM, internal APIs, testing and building a frontend from scratch.",
     ],
-    href: "/player-prop-arbitrage-betting-service",
   },
   // {
   //   title: "Card Game in R",
@@ -190,6 +187,5 @@ export const sideProjects = [
   //     "The program required abstractions of a deck of cards, hands, and possible actions.",
   //     "A function run in the R console provides textual feedback as the player interacts with numerous pop-ups seeking input about their choice of move.",
   //   ],
-  //   href: "/player-prop-arbitrage-betting-service",
   // },
 ];
