@@ -299,22 +299,32 @@ text-align: center;
 }
 
 .project-img {
-  max-width:100%;
+  max-width:90%;
+  max-height:400px
 }
 
 .proj-card {
+  padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 2px solid var(--light)
 }
 
 .proj-outer {
   display:flex;
-  max-width:100%
+  max-width:100%;
+  align-items: center;
 }
 
 .proj-lhs,
 .proj-rhs {
   flex: 1;
-  padding: 0 2%; /* Adjust the padding as desired */
+  padding: 0 2%; /* Adjust the padding as desired */ 
+}
+
+.proj-rhs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .explore-button {

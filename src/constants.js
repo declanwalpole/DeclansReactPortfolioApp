@@ -167,7 +167,7 @@ export const sideProjects = [
     paragraphs: [
       "Table tennis is a sport which gained betting popularity globally when COVID shut down all major pro sports. In eastern Europe, semi-pro table tennis leagues were established to provide 24/7 betting content. Ever since, games are being played among ~200 participants every 15 minutes.",
       "Using the glmnet package in R, I was able to train a statistical model to predict the probability of each matchup that proved highly profitable over many months.",
-      "With Windows Task Scheduler, data was scraped from SofaScore every hour, initiating the model to be retrained and fit to upcoming matches. Predictions were published to a slack channel using their API from within R.",
+      "The program was automated to collect data periodically, initiating the model to be retrained and make predictions as to upcoming matches. Recommended bets were published to the Slack API.",
     ],
   },
   {
