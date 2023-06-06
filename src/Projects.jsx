@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { sideProjects } from "./constants";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
 
 const ExtraInfoCard = ({ additionalInfo }) => {
   return (
@@ -9,7 +11,11 @@ const ExtraInfoCard = ({ additionalInfo }) => {
         <p>{additionalInfo.description}</p>
       </div>
       <div className="extra-rhs">
-        <img src={additionalInfo.image} className="extra-img"></img>
+        <img
+          src={additionalInfo.image}
+          className="extra-img"
+          alt="project feature"
+        ></img>
       </div>
     </div>
   );
@@ -48,20 +54,22 @@ const ExtraInfoCarousel = ({ slides }) => {
         className="carousel-button carousel-button--prev"
         onClick={prevSlide}
       >
-        Previous
+        <RiArrowLeftLine />
+        <span className="carousel-button-desktop">{" Previous"}</span>
       </button>
       <button
         className="carousel-button carousel-button--next"
         onClick={nextSlide}
       >
-        Next
+        <span className="carousel-button-desktop">{"Next "}</span>
+        <RiArrowRightLine />
       </button>
     </div>
   );
 };
 
 const ProjectCard = ({ project }) => {
-  const [showMore, setShowMore] = useState(true);
+  const [showMore, setShowMore] = useState(false);
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
@@ -86,13 +94,21 @@ const ProjectCard = ({ project }) => {
           </div>
 
           {project.additionalInfo && (
-            <button onClick={toggleShowMore}>
-              {showMore ? "Hide product features" : "Explore product features"}
+            <button className="explore-button" onClick={toggleShowMore}>
+              <span className="explore-text">
+                {showMore
+                  ? "Hide product features"
+                  : "Explore all product features"}
+                {"   "}
+                <span className="explore-arrow">
+                  {showMore ? <FaAngleUp /> : <FaAngleDown />}
+                </span>
+              </span>
             </button>
           )}
         </div>
         <div className="proj-rhs">
-          <img src={project.image} className="project-img"></img>
+          <img src={project.image} className="project-img" alt="project"></img>
         </div>
       </div>
       {showMore && project.additionalInfo && (

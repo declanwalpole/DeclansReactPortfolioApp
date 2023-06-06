@@ -9,7 +9,7 @@ import "./styles.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="topdiv">
       <Navbar />
       <HeroSection id="hero" />
       <About id="about" />
